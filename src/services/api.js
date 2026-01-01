@@ -3,7 +3,6 @@ import useAuthStore from '../store/authStore';
 
 const API_BASE_URL = 'http://localhost:3000/api';
 
-console.log('🌐 [api.js] API_BASE_URL configuré:', API_BASE_URL); // ✅ Debug
 
 const api = axios.create({
   baseURL: API_BASE_URL,
@@ -12,7 +11,7 @@ const api = axios.create({
   },
 });
 
-// Interceptor for JWT token
+
 api.interceptors.request.use(
   (config) => {
     const token = useAuthStore.getState().token;
