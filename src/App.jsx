@@ -4,6 +4,7 @@ import { Toaster } from 'react-hot-toast';
 
 // Layouts
 import DashboardLayout from './components/layout/DashboardLayout';
+import LivreurLayout from './components/layout/LivreurLayout';
 import AuthLayout from './components/layout/AuthLayout';
 
 // Auth pages
@@ -103,7 +104,7 @@ function App() {
         {/* Livreur routes */}
         <Route path="/livreur" element={
           <ProtectedRoute allowedRoles={['livreur']}>
-            <DashboardLayout />
+            <LivreurLayout />
           </ProtectedRoute>
         }>
           <Route path="dashboard" element={<LivreurDashboard />} />

@@ -62,7 +62,7 @@ const DashboardLayout = () => {
         <div className="min-h-screen bg-gray-50 flex flex-col">
             <Navbar toggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
 
-            <div className="flex-1 flex overflow-hidden">
+            <div className="flex-1 flex overflow-hidden pt-16 sm:pt-20 transition-all duration-300">
                 {/* Sidebar for Desktop */}
                 <aside className="hidden lg:flex w-64 flex-col bg-white border-r border-gray-100 overflow-y-auto">
                     <div className="p-6 flex-1">
